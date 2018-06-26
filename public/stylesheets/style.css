@@ -1,0 +1,252 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+
+}
+
+a {
+  color: #00B7FF;
+  font-family: "Open sans";
+  font-size: .9em;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.graynav {
+  background-color: #e8e8e8;
+  color: #6d6e71;
+  padding-right: 5%;
+    position: fixed;
+    top: 0px;
+    width: 95%;
+    z-index: 2;
+    height: 30px;
+
+
+}
+
+.graynav p{
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+    float: right;
+}
+
+.whitenav{
+  display: flex;
+  align-items: center;
+    position: fixed;
+    top: 30px;
+    width: 98%;
+    padding-right: 2%;
+    z-index: 2;
+    background-color: white;
+}
+
+.whitenav a {
+  color: #3f7d95;
+  font-size: .9em;
+  font-weight: 500;
+  padding: 0px 0px 0px 75px;
+  font-family: "Open Sans",sans-serif;
+}
+.whitenav a:hover{
+  color:#e60000;
+}
+#orangesquare{
+    font-family: "Open Sans",sans-serif;
+    color: white;
+    background-color: #eb6936;
+    border: 1px solid #eb6936;
+    border-radius: 3px;
+    padding: 10px 30px;
+    max-width: 120px;
+    margin-left: 40px;
+}
+#orangesquare:hover{
+    filter: brightness(120%);
+}
+.bluenav{
+  background-color: #47ace1;
+    position: fixed;
+    top: 95px;
+    width: 95%;
+    z-index: 2;
+    padding-right: 5%;
+    line-height: 10px;
+
+}
+
+.bluenav a {
+  font-size: .9em;
+  font-weight: 500;
+  padding: 25px 30px 25px 30px ;
+  font-family: "Open Sans",sans-serif;
+  color: white;
+  float: right;
+
+
+}
+.bluenav a:hover{
+    background-color: #397187;
+    cursor: pointer;
+}
+
+.text-block {
+    position:relative;
+    bottom: 200px;
+    margin: auto;
+    width: 60%;
+    background-color: #4aace1;
+    color: white;
+    text-align: center;
+    font-family: "Open Sans",sans-serif;
+    padding:80px;
+    line-height: 1.8;
+}
+
+#orangesquare2{
+    font-family: "Open Sans",sans-serif;
+    color: white;
+    background-color: #eb6936;
+    border: 1px solid #eb6936;
+    border-radius: 3px;
+    padding: 10px 30px;
+    max-width: 120px;
+    margin: auto;
+    width: 40%;
+}
+
+#orangesquare2:hover{
+    filter: brightness(120%);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.flex-container > div {
+    padding:30px 0px;
+    margin: 0px;
+    min-width: 380px;
+
+}
+.flex-container > div > p{
+    font-size: 30px;
+    font-family: "Times New Roman";
+    color: #005a76;
+    font-weight: 500;
+    line-height: 0.05;
+    margin-top: 0px;
+}
+.flex-container > img{
+    max-width:600px;
+    max-height:600px;
+    width: auto;
+    height: auto;
+    min-width: 380px;
+
+}
+
+
+.text-block2 {
+   position: absolute;
+   top: 60px;
+   right:60px;
+   text-align: center;
+   font-family: "Open Sans",sans-serif;
+   color: black;
+ }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -170px;
+    height: 800px;
+    margin-bottom: -20px;
+}
+
+.flex-container > img {
+
+    width: 40%;
+}
+.flex-container > div {
+    width: 30%;
+    weight: 500;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Klinic Slab",sans-serif;
+    color: #005a76;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.green-flex-container {
+  display: flex;
+  background-color: #5ac09b;
+  align-items: center;
+  height:300px;
+  justify-content: center;
+  color: white;
+  margin-top: -220px;
+
+}
+
+.green-flex-container > div {
+    padding: 0px 50px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.green-flex-container > div> p {
+    font-size: 10px;
+    padding-top: 0px;
+
+}
+.green-flex-container > div> h1 {
+    font-size: 87px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+ }
+.green-flex-container-small {
+    display: flex;
+    background-color: #5ac09b;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin:40px 50px 40px 50px;
+    padding:0px;
+}
+
+.youtube-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 40px;
+  line-height: normal;
+}
+.youtube-container > div {
+  margin: 50px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  text-align:left;
+  line-height: normal;
+  color: #6e7071;
+}
+.youtube-container> div > h3{
+  font-family: "Open Sans", sans-serif;
+  color: #f17141;
+  font-size: 30px;
+  font-weight: 300;
+  text-align:left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+

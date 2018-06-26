@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    include  ./templates/header.pug
+    .whitenav
+        a(href='/')
+            img(src='./images/zoominfo.PNG', alt='zoominfo')
+        a(href='/Pricing') Pricing
+        a(href='/Platform') Platform
+        a(href='/Data' style='font-weight:900') Our Data
+        a(href='/Summit') Summit 2018
+        a(href='/resources') Resources
+        a(href='/about') About
+        a#orangesquare(href='/Free') Free trial
+    .bluenav
+        p data content
