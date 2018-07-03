@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var favicon = require('serve-favicon');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -11,6 +12,7 @@ var resourcesRouter= require('./routes/resources');
 var dataRouter= require('./routes/data');
 var platformRouter= require('./routes/platform');
 var pricingRouter= require('./routes/pricing');
+var youtubelistRouter= require('./routes/youtube-list');
 
 var app = express();
 
@@ -27,6 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/about', aboutRouter);
@@ -34,6 +37,9 @@ app.use('/resources', resourcesRouter);
 app.use('/data', dataRouter);
 app.use('/platform', platformRouter);
 app.use('/pricing', pricingRouter);
+app.use('/youtube-list', youtubelistRouter);
+
+app.use(favicon(path.join(__dirname,'public','images','zoominfofavicon.png')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

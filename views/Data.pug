@@ -14,3 +14,54 @@ block content
         a#orangesquare(href='/Free') Free trial
     .bluenav
         p data content
+
+
+        .green-flex-container
+            div
+                h1 267M
+                p
+                    | Business people
+                    br
+                    | & counting
+                .green-flex-container-small
+                    img(src='./images/Founded.PNG' alt = 'founded')
+                    p Founded: 2000
+
+            div
+                h1 16M
+                P
+                    | Company profiles
+                    br
+                    | & counting
+                .green-flex-container-small
+                    img(src='./images/Headquarters.PNG' alt='headquarters')
+                    p Headquarters: Waltham, MA
+
+            div
+                h1 59M
+                p
+                    | Direct dials
+                    br
+                    | & counting
+                .green-flex-container-small
+                    img(src='./images/Patents.PNG' alt=patents)
+                    p Patents: Six
+        -var x
+        -for (x=0; x< c.length; x++){
+        if (x % 2 == 0)
+            .youtube-container
+                iframe(width='420', height='345', src=c[x].youtubeURL)
+                div
+                    img(src=c[x].divdata[0], alt='chat')
+                    h3#demo #{c[x].divdata[1]}
+                    p #{c[x].divdata[2]}
+
+        else
+            .youtube-container
+                div
+                    img(src=c[x].divdata[0], alt='chat')
+                    br
+                    h3#demo #{c[x].divdata[1]}
+                    p #{c[x].divdata[2]}
+                iframe(width='420', height='345', src=c[x].youtubeURL)
+        -}

@@ -4,32 +4,45 @@ body {
 
 }
 
+#quote {
+    color:#F17141;
+    font-size: 120px;
+    font-family: "Times New Roman", Serif;
+    font-weight: bold;
+}
+
 a {
-  color: #00B7FF;
+
   font-family: "Open sans";
   font-size: .9em;
   font-weight: 300;
   text-decoration: none;
 }
 
+
 .graynav {
-  background-color: #e8e8e8;
-  color: #6d6e71;
-  padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e8e8e8;
+    padding-right: 5%;
     position: fixed;
     top: 0px;
     width: 95%;
     z-index: 2;
-    height: 30px;
+    height: 60px;
 
 
 }
 
-.graynav p{
-  padding-left: 20px;
-  font-size: 12px;
-  font-weight: 500;
-    float: right;
+.graynav a{
+    margin-left: 10px;
+    padding-right: 10px;
+
+    text-decoration: none;
+    font-size: 12px;
+    color: #6d6e71;
+    font-weight: 600;
+    text-transform: none;
 }
 
 .whitenav{
@@ -121,11 +134,20 @@ a {
     filter: brightness(120%);
 }
 
+@font-face {
+    font-family: 'Klinic Slab';
+    src: url('/fonts/KlinicSlab-Medium.woff2') format('woff2'),
+         url('/fonts/KlinicSlab-Book.woff2') format('woff2'),
+         url('/fonts/KlinicSlab-Light.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
 .flex-container{
     display: flex;
     justify-content: center;
     position: relative;
     bottom: 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -133,22 +155,24 @@ a {
     padding:30px 0px;
     margin: 0px;
     min-width: 380px;
+    max-width: 500px;
 
 }
 .flex-container > div > p{
     font-size: 30px;
-    font-family: "Times New Roman";
+    font-family: "Klinic Slab", slab-serif;
     color: #005a76;
     font-weight: 500;
     line-height: 0.05;
     margin-top: 0px;
 }
 .flex-container > img{
-    max-width:600px;
+    max-width:700px;
     max-height:600px;
     width: auto;
     height: auto;
-    min-width: 380px;
+    min-width: 580px;
+
 
 }
 
@@ -166,7 +190,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: -170px;
-    height: 800px;
+
     margin-bottom: -20px;
 }
 
@@ -189,10 +213,10 @@ a {
   display: flex;
   background-color: #5ac09b;
   align-items: center;
-  height:300px;
+
   justify-content: center;
   color: white;
-  margin-top: -220px;
+
 
 }
 
@@ -226,10 +250,12 @@ a {
 .youtube-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   color: black;
-  margin: 40px;
   line-height: normal;
+    margin: 100px auto;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
 }
 .youtube-container > div {
   margin: 50px;
@@ -238,15 +264,39 @@ a {
   text-align:left;
   line-height: normal;
   color: #6e7071;
+    max-width: 350px;
+    font-size: 17px;
 }
 .youtube-container> div > h3{
-  font-family: "Open Sans", sans-serif;
   color: #f17141;
   font-size: 30px;
   font-weight: 300;
   text-align:left;
   margin-bottom: 0px;
   margin-top: 0px;
+    font-family: KlinicSlab-Book,"Opens Sans",sans-serif;
 
 }
 
+.youtube-container> div > img{
+    height: 55px;
+    width: 55px;
+
+}
+
+.youtube-container > iframe{
+    width: 55%;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+#office{
+    background-image: url("https://www.zoominfo.com/ge-assets/images/aboutPage/about-new-image.jpg");
+    height: 1000px;
+    width: 100%;
+    margin-top: -450px;
+
+
+}
