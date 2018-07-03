@@ -136,12 +136,19 @@ a {
 
 @font-face {
     font-family: 'Klinic Slab';
-    src: url('/fonts/KlinicSlab-Medium.woff2') format('woff2'),
-         url('/fonts/KlinicSlab-Book.woff2') format('woff2'),
-         url('/fonts/KlinicSlab-Light.woff2') format('woff2');
+    src: url('/fonts/KlinicSlab-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Klinic Slab Book';
+    src: url('/fonts/KlinicSlab-Book.woff2') format('woff2');,
+    url('/fonts/KlinicSlab-Light.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 .flex-container{
     display: flex;
     justify-content: center;
@@ -274,7 +281,7 @@ a {
   text-align:left;
   margin-bottom: 0px;
   margin-top: 0px;
-    font-family: KlinicSlab-Book,"Opens Sans",sans-serif;
+    font-family: "Klinic Slab Book","Opens Sans",sans-serif;
 
 }
 
